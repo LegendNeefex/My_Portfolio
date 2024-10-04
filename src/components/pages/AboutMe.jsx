@@ -5,7 +5,7 @@ function AboutMe() {
         <div className="about-flex" >
             <div className="flex-1">
                 <div className="box-outline"></div>
-                <img src="/images/image.png" className="rotate-180" alt="passport" />
+                <img src="/images/pic.png" className="rotate-180" alt="passport" />
             </div>
             <div className="flex-2">
                 <div className="line-details">

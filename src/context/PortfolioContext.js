@@ -4,6 +4,7 @@ const PortfolioContext = createContext()
 
 export const PortfolioProvider = ({children}) => {
     const [overlay,setOverlay] = useState(false)
+    const [burgerIcon,setBurgerIcon] = useState(false)
     const [theme,setTheme] = useState(() => {
         // Retrieve the theme from localStorage when the app loads
         const savedTheme = localStorage.getItem('mode');
@@ -13,6 +14,10 @@ export const PortfolioProvider = ({children}) => {
 
     const ContactOverlayHandler = () =>{
         setOverlay(true)
+    }
+
+    function burgerIconHandler() {
+        setBurgerIcon(true)
     }
 
     const themeHandler = () =>{
@@ -25,10 +30,12 @@ export const PortfolioProvider = ({children}) => {
 
     const stateData ={
         overlay,
+        burgerIcon,
+        theme,
         setOverlay,
         ContactOverlayHandler,
-        theme,
-        themeHandler
+        themeHandler,
+        burgerIconHandler
     }
 
     return <PortfolioContext.Provider value={stateData}>
