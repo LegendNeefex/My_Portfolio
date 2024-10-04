@@ -779,8 +779,7 @@ body{
     }
 }
 
-/* for mobile */
-
+/* for mobile (wide) */
 @media (max-width: 768px) {
     /* Adjust nav-container for mobile */
     .nav-container .nav-flex{
@@ -880,6 +879,148 @@ body{
     .services-container .service-flex .service-2 .card-flex-2 .card{
         padding: 48px;
         width: 400px;   
+    }
+
+    /* Project section adjustments for mobile */
+    .project-container {
+        padding: 24px 0;
+    }
+    .bar-loader-top,
+    .bar-loader-bottom,
+    .bar-loader-left,
+    .bar-loader-right {
+        display: none;
+    }
+    .project-container .project-flex .flexii .innerflex h1 {
+        font-size: 24px;
+    }
+    
+    .project-container .project-flex .flexii .innerflex p {
+        font-size: 20px;
+    }
+    .project-container .project-flex .flexii .innerflex {
+        width: 80%;
+        padding: 20px 0;
+    }
+    .project-container .project-flex .flexii{
+        height: 320px;
+        object-fit: cover;
+    }
+    
+
+    /* Footer section adjustments for mobile */
+    .footer-container .footer-flex .flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-container .footer-flex .flex .flexA h2 {
+        font-size: 16px;
+    }
+    .footer-container .footer-flex .flex .flexA p {
+        font-size: 12px;
+    }
+}
+
+/* for mobile (small) */
+@media screen and (max-width: 480px){
+    /* Adjust nav-container for mobile */
+    .nav-container .nav-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-details ul {
+        display: none;
+    }
+    .burgericon {
+        display: block;
+        align-self: center;
+    }
+
+    /* Banner section adjustments for mobile */
+    .banner-container{
+        height: 320px;
+    }
+
+    .banner-flex {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .banner-flex .name-details h2 {
+        font-size: 24px;
+    }
+    .banner-flex .name-details h3 {
+        font-size: 14px;
+    }
+    .banner-flex .name-details p {
+        font-size: 14px;
+    }
+
+    .banner-flex .div-button {
+        cursor: pointer;
+        font-size: 16px;
+        height: 100px;
+    }
+    
+    /* Transition effect for sun icon */
+    .banner-flex .div-button .fa-sun,.banner-flex .div-button .fa-moon {
+        padding: 13px;
+
+    }
+
+    .banner-flex .name-details .horizontal-line{
+        width: 24px;
+    }
+
+    /* About section adjustments for mobile */
+    .about-container{
+        padding-top: 24px;
+        padding-bottom: 48px;
+        /* height: 650px; */
+    }
+    .about-container .about-flex {
+        flex-direction: column;
+    }
+    .about-container .about-flex .flex-1 img,.about-container .about-flex .flex-1 .box-outline{
+        display: none;
+    }
+
+    .about-container .about-flex .flex-2 {
+        padding: 10px 0;
+    }
+
+    .about-container .about-flex .flex-2 p{
+        padding:7px 0;
+    }
+
+    .about-container .about-flex .flex-2 .skill-box-container{
+        padding: 24px;
+    }
+
+    /* Services section adjustments for mobile */
+    .services-container{
+        padding-bottom:48px;
+    }
+    .services-container .service-flex .service-2 .card-flex-1 {
+        flex-direction: column;
+    }
+
+    .services-container .service-flex .service-2  .card{
+        width: 100%;
+        margin-bottom: 1px;
+    }
+    .services-container .service-flex .service-2 .card-flex-2{
+        flex-direction: column;
+    }
+    /* .services-container .service-flex .service-2 .card-flex-2 .card{
+        width: 100%;
+        margin-left: -5px;
+    } */
+
+    .services-container .service-flex .service-2 .card-flex-2 .card{
+        padding: 48px;
+        width: 300px;   
     }
 
     /* Project section adjustments for mobile */
