@@ -74,8 +74,11 @@ body{
     cursor: pointer;
 }
 
-.nav-details li .nav-active{
-    color: var(--text-primary);
+.nav-details .active {
+    background-color: var(--text-primary);
+    padding: 16px;
+    border-radius: 100px;
+    color: var(--secondary-color);
 }
 
 .nav-details .text-flex{
@@ -98,6 +101,7 @@ body{
 /* Banner section */
 .banner-container{
     background: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+    height: 400px;
 }
 
 .banner-flex{
@@ -109,7 +113,7 @@ body{
 } 
 
 .banner-flex .name-details{
-    margin-top: 100px;
+    margin-top: 80px;
     color: var(--text-secondary);
 }
 
@@ -159,7 +163,7 @@ body{
     top: 30px;
 }
 
-.banner-flex .image{
+/* .banner-flex .image{
     display: flex;
     padding-top: 10px;
 
@@ -169,16 +173,16 @@ body{
     height: 400px;
     object-fit: cover;
     margin-right: 250px;
-}
+} */
 
-.banner-flex .image .div-button {
+.banner-flex .div-button {
     cursor: pointer;
     font-size: 20px;
     height: 20px ;
 }
 
 /* Transition effect for sun icon */
-.banner-flex .image .div-button .fa-sun {
+.banner-flex .div-button .fa-sun {
     border-radius: 10px;
     padding: 16px;
     color: var(--text-secondary);
@@ -186,7 +190,7 @@ body{
 }
 
 /* Transition effect for moon icon */
-.banner-flex .image .div-button .fa-moon {
+.banner-flex .div-button .fa-moon {
     border-radius: 10px;
     color: var(--text-secondary);
     padding: 16px;
@@ -426,10 +430,61 @@ body{
     padding-left: 20px;
 }
 
+.overlay-container .overlay-flex p{
+    font-size: 13px;
+    padding-left: 90px;
+    color: var(--primary-color);
+}
+
 .overlay-container .overlay-flex .email{
     display: flex;
     padding-top: 20px;
 }
 .overlay-container .overlay-flex .phone{
     display: flex;
+}
+
+/* Footer section */
+.footer-container{
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    width: 100%;
+}
+
+.footer-container .footer-flex{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.footer-container .footer-flex h4{
+    font-size: 16px;
+    color: var(--other-white);
+    padding-top: 20px;
+}
+
+.footer-container .footer-flex .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .footer-flex .flex .flexA h2{
+    font-size: 24px;
+    color: var(--other-white);
+}
+.footer-container .footer-flex .flex .flexA p{
+    font-size: 16px;
+    color: var(--button-primary);
+    padding-top:5px;
+}
+
+.footer-container .footer-flex .flex .flexB {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-container .footer-flex .flex .flexB img{
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
 }

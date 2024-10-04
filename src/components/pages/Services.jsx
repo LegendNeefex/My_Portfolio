@@ -17,13 +17,13 @@ function Services() {
                 <div className="card-flex-1">
                     <div className="card">
                         <i className="fa-solid fa-pen"></i>
-                        <h3>Creative Design</h3>
+                        <h3>UI/UX Design</h3>
                         <p>I specialize in crafting visually compelling designs that communicate clear messages and captivate audiences. My work balances creativity with functionality, ensuring each design is both aesthetically pleasing and user-friendly.</p>
                     </div>
                     <div className="card">
                         <i className="fa-solid fa-life-ring"></i>
                         <h3>Fast Support</h3>
-                        <p>support specialist trained to diagnose and resolve issues efficiently, minimizing downtime and ensuring your operations continue smoothly.</p>
+                        <p>i offer expert support to help you diagnose and resolve issues efficiently, minimizing downtime and ensuring your operations continue smoothly.</p>
                     </div>
                     <div className="card">
                         <i className="fa-solid fa-code"></i>
@@ -34,13 +34,13 @@ function Services() {
                 <div className="card-flex-2">
                     <div className="card">
                         <i className="fa-solid fa-briefcase"></i>
-                        <h3>User Experience</h3>
-                        <p>Conduct thorough user research and testing to gather insights that inform our design process. By understanding user behavior and preferences, I create experiences that are aligned with real-world needs.</p>
+                        <h3>Frontend Development</h3>
+                        <p>As a Front-End Developer, I build custom front-end solutions using modern frameworks like React. My expertise includes JavaScript development, creating Single Page Applications (SPAs), and integrating APIs for dynamic content. I provide maintenance services, including updates and bug fixes.</p>
                     </div>
                     <div className="card">
                         <i className="fa-solid fa-laptop"></i>
-                        <h3>User Interface</h3>
-                        <p>create aesthetically pleasing interfaces that align with modern design trends while maintaining a unique identity. Our designs enhance user engagement and create memorable experiences.</p>
+                        <h3>Backend Development</h3>
+                        <p>For backend development, I use Node.js, Express, and PostgresDB. I am proficient in building robust and efficient server-side systems. I ensure that data is securely managed and the application runs seamlessly.</p>
                     </div>
                 </div>
             </div>

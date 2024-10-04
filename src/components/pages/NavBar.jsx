@@ -1,34 +1,44 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { useContext } from 'react';
 import PortfolioContext from '../../context/PortfolioContext';
 
 function NavBar() {
     const {ContactOverlayHandler} = useContext(PortfolioContext)
+    const [activeSection, setActiveSection] = useState("home");
+
+    const handleSetActive = (section) => {
+        setActiveSection(section);
+    };
+
   return (
     <div className="nav-container">
         <div className="nav-flex">
             <div className="nav-details">
-                <NavLink to="/" className="activeclassname">
+                <a href="/">
                     <h2 className='logo'>Neefex .</h2>
-                </NavLink>
+                </a>
                 <ul>
                     <li>
                         <div>
-                            <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
+                            <ScrollLink onClick={() => handleSetActive("home")} className={activeSection === "home" ? "active" : ""} to="home" smooth={true} duration={500} offset={-70}>
                                 Home
                             </ScrollLink>
                         </div>
                     </li>
                     <li>
-                        <ScrollLink to="about-me" smooth={true} duration={500} offset={-70}>
+                        <ScrollLink onClick={() => handleSetActive("About")}className={activeSection === "About" ? "active" : ""} to="about-me" smooth={true} duration={500} offset={-70}>
                             About
                         </ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink to="services" smooth={true} duration={500} offset={-70}>
+                        <ScrollLink onClick={() => handleSetActive("Services")} className={activeSection === "Services" ? "active" : ""} to="services" smooth={true} duration={500} offset={-70}>
                             Services
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink onClick={() => handleSetActive("Projects")} className={activeSection === "Projects" ? "active" : ""} to="projects" smooth={true} duration={500} offset={-70}>
+                            Projects
                         </ScrollLink>
                     </li>
                     <li>

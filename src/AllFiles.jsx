@@ -5,6 +5,7 @@ import AboutMe from './components/pages/AboutMe'
 import Services from './components/pages/Services'
 import ContactOverlay from './components/pages/ContactOverlay'
 import PortfolioContext from './context/PortfolioContext'
+import Footer from './components/pages/Footer'
 
 function AllFiles() {
     const {theme} = useContext(PortfolioContext)
@@ -14,8 +15,9 @@ function AllFiles() {
             <ContactOverlay />
             <Banner/>
             <div className={theme ? "dark" : "light"}>
-            <AboutMe />
-            <Services/>
+                <AboutMe />
+                <Services/>
+                <Footer />
             </div>
         </div>
     )

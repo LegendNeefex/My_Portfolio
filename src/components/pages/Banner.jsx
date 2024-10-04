@@ -15,15 +15,12 @@ function Banner() {
                         <div className="horizontal-line"></div>
                         <p>A creative Designer & Full stack developer</p>
                     </div>
-                    <ScrollLink to="about-me" smooth={true} duration={500} offset={-70} className="btn">
+                    <ScrollLink to="about-me" smooth={true} duration={500} offset={-10} className="btn">
                         Know More
                     </ScrollLink>
                 </div>
-                <div className="image">
-                    <img src="/images/image.png" alt="photograph" />
-                    <div className="div-button" onClick={themeHandler}>
-                     <i className={theme ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
-                    </div>
+                <div className="div-button" onClick={themeHandler}>
+                    <i className={theme ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
                 </div>
             </div>
         </div>
