@@ -35,6 +35,7 @@ export const PortfolioProvider = ({children}) => {
         setOverlay,
         ContactOverlayHandler,
         themeHandler,
+        setBurgerIcon,
         burgerIconHandler
     }
 
