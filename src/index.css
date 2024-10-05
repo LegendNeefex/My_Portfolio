@@ -796,6 +796,9 @@ body{
         display: block;
         align-self: center;
     }
+    .nav-container .option-container .top{
+        width: 93%;
+    }
 
     /* Banner section adjustments for tablet */
     .banner-container{
@@ -926,6 +929,9 @@ body{
         display: block;
         align-self: center;
     }
+    .nav-container .option-container .top{
+        width: 93%;
+    }
 
     /* Banner section adjustments for mobile */
     .banner-container{
@@ -1040,13 +1046,6 @@ body{
         object-fit: cover;
     }
 
-    /* contact overlay adjustments for mobile */
-    .overlay-container{
-        position: absolute;
-        right: 15px;
-        top:220px;
-    }
-
     /* Footer section adjustments for mobile */
     .footer-container .footer-flex .flex {
         flex-direction: column;
@@ -1073,6 +1072,9 @@ body{
     .burgericon {
         display: block;
         align-self: center;
+    }
+    .nav-container .option-container .top{
+        width: 93%;
     }
 
     /* Banner section adjustments for mobile */
@@ -1186,14 +1188,6 @@ body{
     .project-container .project-flex .flexii{
         height: 320px;
         object-fit: cover;
-    }
-
-    
-    /* contact overlay adjustments for mobile */
-    .overlay-container{
-        position: absolute;
-        right: 15px;
-        top:220px;
     }
 
     /* Footer section adjustments for mobile */
