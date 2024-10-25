@@ -15,7 +15,7 @@ function Banner() {
                         <div className="horizontal-line"></div>
                         <p>A creative Designer & Full stack developer</p>
                     </div>
-                    <ScrollLink to="about-me" smooth={true} duration={500} offset={-70} className="btn">
+                    <ScrollLink to="about-me" smooth={true} duration={500} offset={-70}>
                         Know More
                     </ScrollLink>
                 </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { BarLoader } from 'react-spinners'
 
 function Projects() {
   return (
@@ -14,31 +13,50 @@ function Projects() {
                 <h2>Projects i have worked on ?</h2>
             </div>
             <div className="flexii">
-                <div className="bar-loader-top">
-                    <BarLoader className="linesT" color="#fff" width={"1300px"} />
-                </div>
-                <div className="bar-loader-left">
-                    <BarLoader className="linesL" color="#fff" width={"400px"} />
-                </div>
-
                 <div className="innerflex">
                     <div className="div1">
-                        <h1>Coming SOON !</h1>
-                        <p>I'm currently working on some exciting projects! Stay tuned for updates.</p>
+                        <img src="/images/view.png" alt="recipeApp" />
+                        <div className='flexiii'>
+                            <div>
+                                <h2>Recipe App</h2>
+                                <p>Landing Page</p>
+                            </div>
+                            <NavLink to='https://recipe-app-virid-xi.vercel.app/' target='_blank' className='view-button'>
+                                View
+                            </NavLink>
+                        </div>
                     </div>
-                    <div className="div2">
-                        <h3 style={{ textDecoration: 'underline' }}>OR</h3>
-                        <NavLink to="mailto:mhedheyghold12@gmail.com">
-                            Get in touch
-                        </NavLink>
+                    {/* for future changes add more project below */}
+                    {/* <div className="div1">
+                        <img src="/images/view.png" alt="recipeApp" />
+                        <div className='flexiii'>
+                            <div>
+                                <h2>Recipe App</h2>
+                                <p>Landing Page</p>
+                            </div>
+                            <NavLink to='https://recipe-app-virid-xi.vercel.app/' target='_blank' className='view-button'>
+                                View
+                            </NavLink>
+                        </div>
                     </div>
-                </div>
-                <div className="bar-loader-right">
-                    <BarLoader className="linesR" color="#fff" width={"400px"} />
-                </div>
-                <div className="bar-loader-bottom">
-                    <BarLoader className="linesB" color="#fff" width={"1300px"} />
-                </div>
+                    <div className="div1">
+                        <img src="/images/view.png" alt="recipeApp" />
+                        <div className='flexiii'>
+                            <div>
+                                <h2>Recipe App</h2>
+                                <p>Landing Page</p>
+                            </div>
+                            <NavLink to='https://recipe-app-virid-xi.vercel.app/' target='_blank' className='view-button'>
+                                View
+                            </NavLink>
+                        </div>
+                    </div> */}
+                </div>  
+            </div>
+            <div className="div2">
+                <NavLink to="mailto:mhedheyghold12@gmail.com">
+                    Get in touch with neefex
+                </NavLink>
             </div>
         </div>
     </div>
